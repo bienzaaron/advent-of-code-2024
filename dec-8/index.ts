@@ -8,10 +8,10 @@ const grid: string[][] = input
   .split("\n")
   .map((line) => line.split(""));
 
-// map each antinode frequency to the locations for each
+// map each antenna frequency to the locations for each
 // for each pair of nodes (Ax, Ay) and (Bx, By) of the same frequency
 //   antinodes exist at (Ax + 2(Ax - Bx), Ay + 2(Ay - By)) and (Bx + 2(Bx - Ax), By + 2(By - Ay)).
-//     per loop iteration, only calculate 1 anti node, because we will get the second when we get to node B later
+//     per loop iteration, only calculate 1 antinode, because we will get the second when we get to node B later
 //   record unique antinode locations.
 
 const uniqueLocations = new Set<string>();
